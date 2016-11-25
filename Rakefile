@@ -1,11 +1,11 @@
 require 'rubocop/rake_task'
 
 RuboCop::RakeTask.new(:rubocop_no_color) do |t|
-  t.options = ['-D', '--no-color']
+  t.options = ['-a', '-D', '--no-color']
 end
 
 RuboCop::RakeTask.new(:rubocop) do |t|
-  t.options = ['-D']
+  t.options = ['-a', '-D']
 end
 
 require 'rspec/core/rake_task'
