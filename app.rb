@@ -4,6 +4,6 @@ require 'sinatra/json'
 
 set :bind, '0.0.0.0'
 
-get '/' do
+get '/articles' do
   json articles: [{ id: 'abc', title: 'who' }]
 end
