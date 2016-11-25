@@ -127,7 +127,7 @@ CommitMsg:
 PreCommit:
   ALL:
     problem_on_unmodified_line: report
-    requires_files: false
+    requires_files: true
     required: true
     quiet: false
 

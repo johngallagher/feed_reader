@@ -1,8 +1,8 @@
 # frozen_string_literal: true
-source "https://rubygems.org"
+source 'https://rubygems.org'
 
-gem "sinatra"
-gem "sinatra-contrib"
-gem "rspec"
-gem "rack-test"
-gem "rubocop"
+gem 'sinatra'
+gem 'sinatra-contrib'
+gem 'rspec'
+gem 'rack-test'
+gem 'rubocop'
