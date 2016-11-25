@@ -2,5 +2,7 @@
 source "https://rubygems.org"
 
 gem "sinatra"
-gem "rspec"
 gem "sinatra-contrib"
+gem "rspec"
+gem "rack-test"
+gem "rubocop"
