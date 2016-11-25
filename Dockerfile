@@ -10,7 +10,7 @@ WORKDIR /app
 COPY Gemfile* /app/
 RUN bundle install
 
-VOLUME /app
+COPY . /app/
 
 ENV PORT 4567
 EXPOSE 4567
