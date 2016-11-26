@@ -1,0 +1,20 @@
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  name: feed-reader
+spec:
+  replicas: 3
+  template:
+    metadata:
+      labels:
+        app: sinatra
+    spec:
+      containers:
+      - name: feed-reader
+        image: feed-reader:v1
+        env:
+        - name: RACK_ENV
+          value: production
+        ports:
+        - containerPort: 4567
+
