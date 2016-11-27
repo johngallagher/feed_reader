@@ -3,7 +3,7 @@ kind: Deployment
 metadata:
   name: feed-reader
 spec:
-  replicas: 3
+  replicas: 1
   template:
     metadata:
       labels:
@@ -11,7 +11,7 @@ spec:
     spec:
       containers:
       - name: feed-reader
-        image: feed-reader:v1
+        image: gcr.io/my-first-cluster-150608/feed-reader:v1
         env:
         - name: RACK_ENV
           value: production
