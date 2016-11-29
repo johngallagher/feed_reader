@@ -12,7 +12,7 @@ RUN bundle install
 
 COPY . /app/
 
-ENV PORT 80
-EXPOSE 80
+ENV PORT 81
+EXPOSE 81
 CMD ["ruby", "app.rb"]
 
